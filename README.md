@@ -1,4 +1,5 @@
 📰 Projeto Web Design – Site de Notícias
+
 📌 Descrição
 
 Este projeto consiste no desenvolvimento de um site de notícias fictício voltado para o município de Ipanguaçu/RN, criado como projeto final da disciplina de Web Design.
