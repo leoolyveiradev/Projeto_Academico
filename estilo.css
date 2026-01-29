@@ -1,0 +1,110 @@
+/* Estilo para todo o corpo da página */
+body {
+  background-color: #f5f5f5; /* Define a cor de fundo do corpo */
+  font-family: Arial, sans-serif; /* Define a fonte usada no site */
+  margin: 0; /* Remove margens padrão do navegador */
+  padding: 0; /* Remove espaçamento interno padrão */
+  text-align: justify; /* Justifica o texto em todos os elementos filhos */
+}
+
+/* Estilo do cabeçalho (header) */
+header {
+  position: relative; /* Permite posicionamento absoluto do ::before */
+  background-image: url("/imgs/FundoParaSiteIpanguacuNoticias.png"); /* Imagem de fundo do header */
+  background-size: cover; /* Faz a imagem cobrir todo o header */
+  background-position: center; /* Centraliza a imagem */
+  background-repeat: no-repeat; /* Evita que a imagem se repita */
+  color: white; /* Define a cor do texto como branco */
+  padding: 80px 20px; /* Espaçamento interno no header */
+  text-align: center; /* Centraliza o texto horizontalmente */
+  z-index: 1; /* Coloca o conteúdo acima da camada escura do ::before */
+  overflow: hidden; /* Garante que nada saia fora do container */
+}
+
+/* Cria uma camada escura por cima da imagem do header */
+header::before {
+  content: ""; /* Conteúdo vazio necessário para o pseudoelemento */
+  position: absolute; /* Posicionamento absoluto dentro do header */
+  top: 0;
+  left: 0;
+  width: 100%; /* Ocupa toda a largura */
+  height: 100%; /* Ocupa toda a altura */
+  background-color: rgba(0, 0, 0, 0.3); /* Camada preta com 50% de opacidade */
+  z-index: 0; /* Fica atrás do conteúdo principal */
+}
+
+/* Garante que o título (h1) fique acima da camada escura */
+header h1 {
+  position: relative; /* Posiciona em relação ao seu local normal */
+  z-index: 1; /* Coloca o texto acima da camada escura */
+}
+
+h3 {
+	color: #0066cc;
+}
+
+/* Link da página atual (marcado) */
+nav ul li a.marcado {
+  background-color:#0066cc; /* azul mais escuro que o menu */
+  color: #ffffff;            /* mantém texto branco */
+  font-weight: bold;
+}
+
+/* Evita que o hover mude o marcado */
+nav ul li a.marcado:hover {
+  background-color: #307cc9;
+}
+
+/* Menu de navegação horizontal */
+nav {
+  background-color: #004080; /* Cor de fundo do menu */
+  text-align: center; /* Centraliza os itens */
+}
+
+nav ul {
+  list-style: none; /* Remove os marcadores da lista */
+  margin: 0;
+  padding: 0;
+  display: flex; /* Torna a lista horizontal */
+  justify-content: center; /* Centraliza os itens */
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav ul li a {
+  display: block;
+  padding: 15px 20px;
+  color: white; /* Cor do texto dos links */
+  text-decoration: none; /* Remove sublinhado */
+  transition: background 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #0066cc; /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilização da seção principal */
+section {
+  padding: 20px; /* Espaço interno */
+  margin: 20px; /* Espaço externo */
+  background-color: white; /* Fundo branco para destacar o conteúdo */
+  border-radius: 10px; /* Cantos arredondados */
+}
+
+h2 {
+  color: #004080;
+}
+
+h4 {
+	color: #000000;
+}
+
+/* Estilo do rodapé */
+footer {
+  background-color: #333; /* Cor de fundo escura */
+  color: white; /* Texto branco */
+  text-align: center; /* Centraliza o texto */
+  padding: 10px; /* Espaço interno */
+}
