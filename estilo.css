@@ -10,7 +10,7 @@ body {
 /* Estilo do cabeçalho (header) */
 header {
   position: relative; /* Permite posicionamento absoluto do ::before */
-  background-image: url("/imgs/FundoParaSiteIpanguacuNoticias.png"); /* Imagem de fundo do header */
+  background-image: url("imgs/FundoParaSiteIpanguacuNoticias.png"); /* Imagem de fundo do header */
   background-size: cover; /* Faz a imagem cobrir todo o header */
   background-position: center; /* Centraliza a imagem */
   background-repeat: no-repeat; /* Evita que a imagem se repita */
